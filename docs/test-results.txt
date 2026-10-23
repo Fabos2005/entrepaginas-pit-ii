@@ -1,0 +1,31 @@
+test_blank_title (test_app.LibraryTests.test_blank_title) ... ok
+test_book_creation (test_app.LibraryTests.test_book_creation) ... ok
+test_borrow_decreases_availability (test_app.LibraryTests.test_borrow_decreases_availability) ... ok
+test_concurrency_last_copy (test_app.LibraryTests.test_concurrency_last_copy) ... ok
+test_csrf (test_app.LibraryTests.test_csrf) ... ok
+test_dashboard (test_app.LibraryTests.test_dashboard) ... ok
+test_duplicate_reader (test_app.LibraryTests.test_duplicate_reader) ... ok
+test_duplicate_return (test_app.LibraryTests.test_duplicate_return) ... ok
+test_foreign_key (test_app.LibraryTests.test_foreign_key) ... ok
+test_future_limit (test_app.LibraryTests.test_future_limit) ... ok
+test_invalid_date (test_app.LibraryTests.test_invalid_date) ... ok
+test_invalid_quantity (test_app.LibraryTests.test_invalid_quantity) ... ok
+test_missing_return (test_app.LibraryTests.test_missing_return) ... ok
+test_not_found (test_app.LibraryTests.test_not_found) ... ok
+test_out_of_stock (test_app.LibraryTests.test_out_of_stock) ... ok
+test_overdue (test_app.LibraryTests.test_overdue) ... ok
+test_past_due_date_rejected (test_app.LibraryTests.test_past_due_date_rejected) ... ok
+test_persistence (test_app.LibraryTests.test_persistence) ... ok
+test_requires_login (test_app.LibraryTests.test_requires_login) ... ok
+test_return_and_history (test_app.LibraryTests.test_return_and_history) ... ok
+test_search (test_app.LibraryTests.test_search) ... ok
+test_security_headers (test_app.LibraryTests.test_security_headers) ... ok
+test_sql_injection_search (test_app.LibraryTests.test_sql_injection_search) ... ok
+test_unknown_reader (test_app.LibraryTests.test_unknown_reader) ... ok
+test_wrong_password (test_app.LibraryTests.test_wrong_password) ... ok
+test_xss_escaped (test_app.LibraryTests.test_xss_escaped) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.315s
+
+OK
