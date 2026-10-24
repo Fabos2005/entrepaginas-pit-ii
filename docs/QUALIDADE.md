@@ -1,6 +1,6 @@
 # Laudo técnico preliminar de qualidade
 
-**Objeto:** EntrePáginas, implementação acadêmica inicial. **Responsável pelo projeto:** Fabricio Feliciano Cardoso. **Situação:** verificação automatizada concluída; validação humana, visual e em hospedagem pendente. Este documento não constitui laudo de um avaliador externo.
+**Objeto:** EntrePáginas, implementação acadêmica inicial. **Responsável pelo projeto:** Fabricio Feliciano Cardoso. **Situação:** verificação automatizada e verificação inicial no navegador e na hospedagem concluídas; avaliação por cinco participantes pendente. Este documento não constitui laudo de um avaliador externo.
 
 ## Método e evidência
 
@@ -14,20 +14,20 @@ Executada a suíte `python -m unittest discover -s tests -v`, em Python 3.12, Fl
 | Integridade | Estoque esgotado recusado; concorrência aceita um de dois pedidos; FK rejeita órfão | Regras verificadas preservadas |
 | Confiabilidade | Reabertura conserva cadastro; devolução repetida recusada | Persistência e idempotência da devolução verificadas |
 | Segurança básica | Sessão exigida; CSRF recusado; HTML escapado; SQL parametrizado | Proteções pontuais presentes, sem auditoria ou pentest |
-| Usabilidade | Rótulos, feedback e adaptação CSS implementados | Ainda não validada por usuários ou navegador |
+| Usabilidade | Rótulos, feedback e adaptação CSS implementados | Interface inspecionada em desktop e largura de 390 pixels; avaliação pelos cinco participantes pendente |
 | Manutenibilidade | MVC, esquema e testes separados | Estrutura documentada, sem métrica quantitativa |
 | Eficiência | Suíte executada com base pequena | Não houve ensaio de carga nem meta de latência verificada |
-| Portabilidade | Aplicação Python/WSGI e instruções locais | Windows e hospedagem externa ainda não executados |
+| Portabilidade | Aplicação Python/WSGI e instruções locais | Hospedagem PythonAnywhere executada; instalação local no Windows não verificada |
 
 ## Pendências e critérios para aceite
 
-- Executar a aplicação em navegador desktop e celular; verificar teclado, foco, contraste, tabelas e confirmação de devolução.
+- Ampliar avaliação de teclado, foco e contraste; testar em celulares físicos.
 - Coletar cinco avaliações independentes, com falhas, sugestões e imagens quando aplicável.
 - Corrigir defeitos encontrados, repetir cenários afetados e registrar evidências antes/depois.
-- Publicar em hospedagem com HTTPS e volume persistente; verificar acesso e reinício.
+- Acompanhar avaliações na versão publicada com HTTPS e banco persistente.
 - Gravar vídeo e completar os links do formulário de entrega.
 
-Conclusão: os cenários automatizados executados passaram. **O aceite final permanece pendente**, sobretudo da validação pelos cinco colegas ou profissionais e do ambiente publicado. Não se afirma conformidade integral, ausência de defeitos ou prontidão para uso real.
+Conclusão: os cenários automatizados executados passaram. **O aceite final permanece pendente**, sobretudo da validação pelos cinco colegas ou profissionais. Não se afirma conformidade integral, ausência de defeitos ou prontidão para uso real.
 
 ## Registro de melhorias
 
@@ -41,3 +41,9 @@ Conclusão: os cenários automatizados executados passaram. **O aceite final per
 | Sugestões dos cinco participantes | Validação externa | Ainda não coletadas |
 
 O template oficial solicita evidências dos erros e das correções inseridas no laudo e um segundo vídeo da solução atualizada (até cinco minutos). Esses itens permanecem pendentes da avaliação real, não sendo atendidos apenas pela suíte automatizada.
+
+## Verificação da versão publicada
+
+Endereço: https://fabrifeliciano.pythonanywhere.com/. Foram verificados login e logout, cadastro de livro e leitor, busca por autor, recusa de código de leitor duplicado, empréstimo com estoque zero e devolução. Cancelar a confirmação preservou o empréstimo ativo; confirmar registrou a devolução, elevou o estoque disponível de zero para um e manteve o histórico. O reinício do servidor preservou os cadastros e o empréstimo.
+
+A confirmação de devolução foi substituída por controles dentro da página, com as opções Confirmar devolução e Cancelar. A interface foi inspecionada em desktop e em largura de 390 pixels; tabelas extensas mantêm rolagem horizontal. Essa inspeção não substitui a avaliação de acessibilidade nem os cinco pareceres externos.
