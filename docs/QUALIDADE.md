@@ -1,3 +1,5 @@
+> Documento histórico do EntrePáginas descontinuado; não integra a entrega atual do PIT II.
+
 # Laudo técnico preliminar de qualidade
 
 **Objeto:** EntrePáginas, implementação acadêmica inicial. **Responsável pelo projeto:** Fabricio Feliciano Cardoso. **Situação:** verificação automatizada e verificação inicial no navegador e na hospedagem concluídas; avaliação por cinco participantes pendente. Este documento não constitui laudo de um avaliador externo.
@@ -44,6 +46,6 @@ O template oficial solicita evidências dos erros e das correções inseridas no
 
 ## Verificação da versão publicada
 
-Endereço: https://fabrifeliciano.pythonanywhere.com/. Foram verificados login e logout, cadastro de livro e leitor, busca por autor, recusa de código de leitor duplicado, empréstimo com estoque zero e devolução. Cancelar a confirmação preservou o empréstimo ativo; confirmar registrou a devolução, elevou o estoque disponível de zero para um e manteve o histórico. O reinício do servidor preservou os cadastros e o empréstimo.
+Registro histórico de testes da aplicação EntrePáginas, atualmente descontinuada e sem endereço público ativo. Foram verificados login e logout, cadastro de livro e leitor, busca por autor, recusa de código de leitor duplicado, empréstimo com estoque zero e devolução. Cancelar a confirmação preservou o empréstimo ativo; confirmar registrou a devolução, elevou o estoque disponível de zero para um e manteve o histórico. O reinício do servidor preservou os cadastros e o empréstimo.
 
 A confirmação de devolução foi substituída por controles dentro da página, com as opções Confirmar devolução e Cancelar. A interface foi inspecionada em desktop e em largura de 390 pixels; tabelas extensas mantêm rolagem horizontal. Essa inspeção não substitui a avaliação de acessibilidade nem os cinco pareceres externos.
