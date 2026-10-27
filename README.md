@@ -1,10 +1,12 @@
-# EntrePáginas — biblioteca comunitária
+# EntrePáginas — DESCONTINUADO
 
 Projeto acadêmico de gestão de biblioteca comunitária desenvolvido para Projeto Integrador Transdisciplinar em Engenharia de Software II.
 
-## Acessar a aplicação
+> **Projeto descontinuado, preservado somente como histórico. Não integra a entrega atual do PIT II. Código e documentação abaixo não representam uma aplicação em produção.**
 
-https://fabrifeliciano.pythonanywhere.com/
+## Situação da aplicação
+
+Aplicação desativada; este projeto não possui endereço público ativo.
 
 A senha de demonstração é compartilhada separadamente com os avaliadores. Use dados fictícios.
 
@@ -50,7 +52,7 @@ Acesso por senha; cadastro de livros e leitores; busca de título/autor; emprés
 4. Teste cadastro, empréstimo e devolução no endereço público e reinicie a aplicação para verificar persistência. Faça backup do SQLite com a API de backup do SQLite; não copie o arquivo durante gravações.
 5. Use apenas dados fictícios na demonstração e compartilhe a senha de demonstração separadamente com avaliadores. A versão não possui limitação de tentativas de login, recuperação de senha nem gestão de usuários; não é adequada a operação pública com dados pessoais reais sem ampliar essas proteções.
 
-Aplicação publicada no plano gratuito do PythonAnywhere. Vídeos e avaliações por cinco participantes estão pendentes. A hospedagem gratuita requer renovação mensal pelo botão "Run until 1 month from today" na aba Web; não requer upgrade.
+Aplicação descontinuada. Este material é histórico e não integra a entrega atual do PIT II. A hospedagem gratuita requer renovação mensal pelo botão "Run until 1 month from today" na aba Web; não requer upgrade.
 
 ## Roteiro para fechar a entrega
 
